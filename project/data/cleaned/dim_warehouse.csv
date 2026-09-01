@@ -1,0 +1,6 @@
+Warehouse_ID,Warehouse_Name,Location_ID,Capacity_Units,Warehouse_Type
+WH01,Delhi Central Warehouse,LOC01,67140,Fulfillment
+WH02,Mumbai Central Warehouse,LOC02,121916,Regional
+WH03,Bengaluru Central Warehouse,LOC03,112365,Regional
+WH04,Hyderabad Central Warehouse,LOC04,95110,Regional
+WH05,Kolkata Central Warehouse,LOC05,94641,Regional

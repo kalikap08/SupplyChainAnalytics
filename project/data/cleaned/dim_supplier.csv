@@ -1,0 +1,13 @@
+Supplier_ID,Supplier_Name,City,Base_Lead_Time_Days,Supplier_Rating,Defect_Rate
+S001,Apex Distributors,Delhi,10,4.3,0.016
+S002,Nova Supply Co.,Mumbai,7,4.4,0.057
+S003,Prime Components,Bengaluru,11,3.2,0.037
+S004,Vertex Trading,Hyderabad,7,4.8,0.049
+S005,BlueLine Suppliers,Kolkata,6,4.6,0.037
+S006,Metro Wholesale,Pune,7,4.1,0.014
+S007,OmniSource,Delhi,5,4.6,0.048
+S008,Global Goods,Mumbai,4,3.7,0.068
+S009,Reliable Imports,Bengaluru,9,4.7,0.057
+S010,EastWest Supply,Hyderabad,9,3.9,0.013
+S011,Urban Distribution,Kolkata,4,3.3,0.051
+S012,Swift Traders,Pune,11,4.8,0.03

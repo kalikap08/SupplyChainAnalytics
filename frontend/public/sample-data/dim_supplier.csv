@@ -1,0 +1,6 @@
+Supplier_ID,Supplier_Name,City,Base_Lead_Time_Days,Supplier_Rating,Defect_Rate
+SUP001,Tata Steel Components,Jamshedpur,7,4.5,0.02
+SUP002,Bajaj Auto Parts,Pune,5,4.2,0.03
+SUP003,Hero MotoCorp Supply,Gurugram,4,4.7,0.01
+SUP004,Ashok Leyland Vendors,Chennai,10,3.9,0.05
+SUP005,Mahindra Components,Nashik,6,4.4,0.02

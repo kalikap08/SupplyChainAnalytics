@@ -1,0 +1,40 @@
+databases:
+  - name: supply-chain-db
+    plan: free
+    databaseName: supply_chain_db
+    user: supply_chain_user
+
+services:
+  - type: web
+    name: supply-chain-api
+    runtime: python
+    plan: free
+    rootDir: project/api
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PGHOST
+        fromDatabase:
+          name: supply-chain-db
+          property: host
+      - key: PGPORT
+        fromDatabase:
+          name: supply-chain-db
+          property: port
+      - key: PGDATABASE
+        fromDatabase:
+          name: supply-chain-db
+          property: database
+      - key: PGUSER
+        fromDatabase:
+          name: supply-chain-db
+          property: user
+      - key: PGPASSWORD
+        fromDatabase:
+          name: supply-chain-db
+          property: password
+      # Set this in the Render dashboard after you know your Vercel URL,
+      # e.g. https://your-app.vercel.app (no trailing slash). Comma-separate
+      # multiple origins if needed.
+      - key: ALLOWED_ORIGINS
+        sync: false

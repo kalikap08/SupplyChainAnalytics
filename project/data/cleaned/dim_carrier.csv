@@ -1,0 +1,7 @@
+Carrier_ID,Carrier_Name,Late_Delivery_Probability,Base_Shipping_Cost
+CAR01,SwiftShip,0.043,202.63
+CAR02,BlueDartX,0.101,223.32
+CAR03,FastTrack,0.045,212.07
+CAR04,PrimeLogix,0.07,131.57
+CAR05,UrbanExpress,0.054,249.32
+CAR06,NationalCargo,0.045,220.59

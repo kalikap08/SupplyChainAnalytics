@@ -1,0 +1,6 @@
+Carrier_ID,Carrier_Name,Late_Delivery_Probability,Base_Shipping_Cost
+CAR001,BlueDart Express,0.08,150.00
+CAR002,Delhivery Logistics,0.12,120.50
+CAR003,FedEx India,0.05,210.75
+CAR004,DTDC Courier,0.15,95.00
+CAR005,Ecom Express,0.10,110.25

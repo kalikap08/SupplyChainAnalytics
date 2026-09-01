@@ -1,0 +1,41 @@
+Product_ID,Product_Name,Category,Subcategory,Brand,Unit_Cost,Selling_Price,Primary_Supplier_ID,Product_Status
+P0001,Electronics Accessories Product 001,Electronics,Accessories,Aster,1391.04,1798.19,S009,Active
+P0002,Electronics Audio Product 002,Electronics,Audio,Nova,784.73,950.45,S009,Active
+P0003,Home Kitchen Product 003,Home,Kitchen,Vertex,910.15,1220.29,S006,Active
+P0004,Home Storage Product 004,Home,Storage,Omni,1614.46,2227.7,S008,Active
+P0005,Sports Fitness Product 005,Sports,Fitness,Prime,1196.43,1650.77,S009,Active
+P0006,Sports Cycling Product 006,Sports,Cycling,Urban,2845.96,3622.89,S011,Active
+P0007,Office Stationery Product 007,Office,Stationery,Pulse,2436.36,2956.62,S004,Active
+P0008,Office Desk Accessories Product 008,Office,Desk Accessories,Zenith,819.69,968.68,S010,Active
+P0009,Personal Care Grooming Product 009,Personal Care,Grooming,Aster,2377.25,3207.48,S010,Active
+P0010,Personal Care Wellness Product 010,Personal Care,Wellness,Nova,2765.44,3567.8,S007,Active
+P0011,Electronics Accessories Product 011,Electronics,Accessories,Vertex,618.32,746.61,S007,Active
+P0012,Electronics Audio Product 012,Electronics,Audio,Omni,2389.15,3089.32,S011,Active
+P0013,Home Kitchen Product 013,Home,Kitchen,Prime,2712.75,3614.28,S007,Active
+P0014,Home Storage Product 014,Home,Storage,Urban,2004.49,2634.32,S010,Active
+P0015,Sports Fitness Product 015,Sports,Fitness,Pulse,253.24,325.37,S004,Active
+P0016,Sports Cycling Product 016,Sports,Cycling,Zenith,868.86,1110.44,S012,Active
+P0017,Office Stationery Product 017,Office,Stationery,Aster,933.7,1114.83,S011,Active
+P0018,Office Desk Accessories Product 018,Office,Desk Accessories,Nova,1092.64,1366.31,S006,Active
+P0019,Personal Care Grooming Product 019,Personal Care,Grooming,Vertex,2016.06,2758.24,S008,Active
+P0020,Personal Care Wellness Product 020,Personal Care,Wellness,Omni,2375.45,3034.72,S006,Active
+P0021,Electronics Accessories Product 021,Electronics,Accessories,Prime,709.36,840.91,S010,Active
+P0022,Electronics Audio Product 022,Electronics,Audio,Urban,451.66,611.26,S009,Active
+P0023,Home Kitchen Product 023,Home,Kitchen,Pulse,690.26,897.51,S006,Active
+P0024,Home Storage Product 024,Home,Storage,Zenith,660.25,889.43,S006,Active
+P0025,Sports Fitness Product 025,Sports,Fitness,Aster,1426.42,1786.4,S006,Active
+P0026,Sports Cycling Product 026,Sports,Cycling,Nova,2261.45,2864.88,S012,Active
+P0027,Office Stationery Product 027,Office,Stationery,Vertex,545.32,769.37,S002,Active
+P0028,Office Desk Accessories Product 028,Office,Desk Accessories,Omni,3193.75,4304.95,S006,Active
+P0029,Personal Care Grooming Product 029,Personal Care,Grooming,Prime,3396.74,4643.0,S004,Active
+P0030,Personal Care Wellness Product 030,Personal Care,Wellness,Urban,2551.58,3286.04,S009,Active
+P0031,Electronics Accessories Product 031,Electronics,Accessories,Pulse,472.91,660.48,S004,Active
+P0032,Electronics Audio Product 032,Electronics,Audio,Zenith,1676.85,2060.12,S009,Active
+P0033,Home Kitchen Product 033,Home,Kitchen,Aster,2090.39,2555.35,S004,Active
+P0034,Home Storage Product 034,Home,Storage,Nova,3019.66,4112.91,S006,Active
+P0035,Sports Fitness Product 035,Sports,Fitness,Vertex,1597.51,2125.57,S009,Active
+P0036,Sports Cycling Product 036,Sports,Cycling,Omni,2106.73,2814.51,S008,Active
+P0037,Office Stationery Product 037,Office,Stationery,Prime,1542.95,1836.09,S002,Active
+P0038,Office Desk Accessories Product 038,Office,Desk Accessories,Urban,1804.87,2272.63,S008,Active
+P0039,Personal Care Grooming Product 039,Personal Care,Grooming,Pulse,496.4,655.76,S002,Active
+P0040,Personal Care Wellness Product 040,Personal Care,Wellness,Zenith,721.49,1011.55,S012,Active
