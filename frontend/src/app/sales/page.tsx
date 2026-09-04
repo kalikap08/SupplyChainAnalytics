@@ -110,6 +110,7 @@ export default function SalesPage() {
                     content: (
                       <div className="space-y-6">
                         <BarChartCard
+                          title="Top 10 Products by Revenue"
                           data={topProducts.map((r) => ({
                             label: r.product_name ?? r.analysis_key,
                             value: r.revenue,

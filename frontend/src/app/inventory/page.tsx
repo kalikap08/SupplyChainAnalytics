@@ -135,6 +135,7 @@ export default function InventoryPage() {
                     content: (
                       <div className="space-y-6">
                         <BarChartCard
+                          title="Top 10 Products by Stockout Rate"
                           data={topByStockoutRate.map((r) => ({
                             label: r.product_id ?? r.analysis_key,
                             value: r.stockout_rate_percent,
