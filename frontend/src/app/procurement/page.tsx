@@ -8,7 +8,7 @@ import DataTable from "@/components/DataTable";
 import DrilldownModal from "@/components/DrilldownModal";
 import BarChartCard from "@/components/charts/BarChartCard";
 import { fetchProcurementData, fetchProcurementOrders } from "@/lib/api";
-import { formatINR, formatNumber, formatPercent } from "@/lib/format";
+import { formatINR, formatINRCompact, formatNumber, formatPercent } from "@/lib/format";
 import { procurementOrderColumns } from "@/lib/drilldownColumns";
 import type { ProcurementRow, ProcurementOrderRow } from "@/types/analytics";
 import {
@@ -113,11 +113,13 @@ export default function ProcurementPage() {
               description="Top 10 suppliers by total purchase order value"
             >
               <BarChartCard
+                title="Top 10 Suppliers by Purchase Order Value"
                 data={topSuppliers.map((s) => ({
                   label: s.supplier_id,
                   value: s.poValue,
                 }))}
                 valueFormatter={(v) => formatINR(v)}
+                axisValueFormatter={formatINRCompact}
                 color="#7C3AED"
               />
             </SectionCard>

@@ -19,6 +19,8 @@ export interface LineDatum {
 interface LineChartCardProps {
   data: LineDatum[];
   valueFormatter?: (value: number) => string;
+  /** Formatter for the Y-axis ticks specifically — use a compact form (e.g. "₹2.6Cr") when valueFormatter's full output would get clipped in the narrow axis gutter. Falls back to valueFormatter. */
+  axisValueFormatter?: (value: number) => string;
   color?: string;
   height?: number;
 }
@@ -26,6 +28,7 @@ interface LineChartCardProps {
 export default function LineChartCard({
   data,
   valueFormatter,
+  axisValueFormatter,
   color = "#2563EB",
   height = 260,
 }: LineChartCardProps) {
@@ -52,8 +55,8 @@ export default function LineChartCard({
           tick={{ fontSize: 11, fill: "#8896AB" }}
           axisLine={false}
           tickLine={false}
-          width={60}
-          tickFormatter={valueFormatter}
+          width={64}
+          tickFormatter={axisValueFormatter ?? valueFormatter}
         />
         <Tooltip
           cursor={{ stroke: "#CBD5E1", strokeWidth: 1 }}

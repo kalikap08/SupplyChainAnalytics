@@ -10,7 +10,7 @@ import DrilldownModal from "@/components/DrilldownModal";
 import BarChartCard from "@/components/charts/BarChartCard";
 import PieChartCard from "@/components/charts/PieChartCard";
 import { fetchInventoryData, fetchInventoryRecords } from "@/lib/api";
-import { formatINR, formatNumber, formatPercent } from "@/lib/format";
+import { formatINR, formatINRCompact, formatNumber, formatPercent } from "@/lib/format";
 import { inventoryRecordColumns } from "@/lib/drilldownColumns";
 import type { InventoryRow, InventoryRecordRow } from "@/types/analytics";
 import {
@@ -116,6 +116,7 @@ export default function InventoryPage() {
                             value: r.inventory_value,
                           }))}
                           valueFormatter={(v) => formatINR(v)}
+                          axisValueFormatter={formatINRCompact}
                           color="#B45309"
                           compact
                         />

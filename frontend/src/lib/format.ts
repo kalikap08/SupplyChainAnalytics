@@ -11,6 +11,20 @@ export function formatINR(value: number): string {
 }
 
 /**
+ * Formats a value as Indian Rupees using lakh/crore abbreviations,
+ * e.g. 26122895 -> "₹2.6Cr", 500000 -> "₹5L". For tight spaces like
+ * chart axis ticks, where the full formatINR string would get clipped.
+ */
+export function formatINRCompact(value: number): string {
+  const formatted = new Intl.NumberFormat("en-IN", {
+    notation: "compact",
+    compactDisplay: "short",
+    maximumFractionDigits: 1,
+  }).format(value);
+  return `₹${formatted}`;
+}
+
+/**
  * Formats a plain count/quantity with standard thousands separators,
  * e.g. 1267078 -> "1,267,078".
  */

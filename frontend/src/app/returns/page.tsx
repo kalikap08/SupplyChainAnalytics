@@ -10,7 +10,7 @@ import DrilldownModal from "@/components/DrilldownModal";
 import BarChartCard from "@/components/charts/BarChartCard";
 import PieChartCard from "@/components/charts/PieChartCard";
 import { fetchReturnsData, fetchReturnsRecords } from "@/lib/api";
-import { formatINR, formatNumber } from "@/lib/format";
+import { formatINR, formatINRCompact, formatNumber } from "@/lib/format";
 import { returnRecordColumns } from "@/lib/drilldownColumns";
 import type { ReturnsRow, ReturnRecordRow } from "@/types/analytics";
 import { IconReturns, IconReturnedUnits, IconRevenue } from "@/components/icons";
@@ -105,6 +105,7 @@ export default function ReturnsPage() {
                           value: r.refund_value,
                         }))}
                         valueFormatter={(v) => formatINR(v)}
+                        axisValueFormatter={formatINRCompact}
                         color="#B45309"
                       />
                     ),

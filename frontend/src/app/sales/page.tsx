@@ -11,7 +11,7 @@ import LineChartCard from "@/components/charts/LineChartCard";
 import BarChartCard from "@/components/charts/BarChartCard";
 import PieChartCard from "@/components/charts/PieChartCard";
 import { fetchSalesData, fetchSalesOrders } from "@/lib/api";
-import { formatINR, formatNumber } from "@/lib/format";
+import { formatINR, formatINRCompact, formatNumber } from "@/lib/format";
 import { salesOrderColumns } from "@/lib/drilldownColumns";
 import type { SalesRow, SalesOrderRow } from "@/types/analytics";
 import { IconRevenue, IconOrders, IconUnits, IconTrend } from "@/components/icons";
@@ -100,6 +100,7 @@ export default function SalesPage() {
                           value: r.revenue,
                         }))}
                         valueFormatter={(v) => formatINR(v)}
+                        axisValueFormatter={formatINRCompact}
                         color="#2563EB"
                       />
                     ),
@@ -116,6 +117,7 @@ export default function SalesPage() {
                             value: r.revenue,
                           }))}
                           valueFormatter={(v) => formatINR(v)}
+                          axisValueFormatter={formatINRCompact}
                           color="#2563EB"
                           compact
                         />
@@ -173,6 +175,7 @@ export default function SalesPage() {
                             value: r.revenue,
                           }))}
                           valueFormatter={(v) => formatINR(v)}
+                          axisValueFormatter={formatINRCompact}
                           color="#0D9488"
                           compact
                         />

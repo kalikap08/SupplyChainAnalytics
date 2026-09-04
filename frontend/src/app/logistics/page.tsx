@@ -10,7 +10,7 @@ import DrilldownModal from "@/components/DrilldownModal";
 import BarChartCard from "@/components/charts/BarChartCard";
 import RadialGaugeChartCard from "@/components/charts/RadialGaugeChartCard";
 import { fetchLogisticsData, fetchLogisticsShipments } from "@/lib/api";
-import { formatINR, formatNumber, formatPercent } from "@/lib/format";
+import { formatINR, formatINRCompact, formatNumber, formatPercent } from "@/lib/format";
 import { shipmentColumns } from "@/lib/drilldownColumns";
 import type { LogisticsRow, ShipmentRow } from "@/types/analytics";
 import { IconTruck, IconShippingCost, IconDelivery } from "@/components/icons";
@@ -154,6 +154,7 @@ export default function LogisticsPage() {
                           value: r.total_shipping_cost,
                         }))}
                         valueFormatter={(v) => formatINR(v)}
+                        axisValueFormatter={formatINRCompact}
                         color="#2563EB"
                       />
                     ),

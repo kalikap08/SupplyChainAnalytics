@@ -19,6 +19,8 @@ export interface BarDatum {
 interface BarChartCardProps {
   data: BarDatum[];
   valueFormatter?: (value: number) => string;
+  /** Formatter for the Y-axis ticks specifically — use a compact form (e.g. "₹2.6Cr") when valueFormatter's full output would get clipped in the narrow axis gutter. Falls back to valueFormatter. */
+  axisValueFormatter?: (value: number) => string;
   color?: string;
   height?: number;
   /** Force angled labels — use when the chart sits in a narrower column (e.g. beside another chart). */
@@ -30,6 +32,7 @@ interface BarChartCardProps {
 export default function BarChartCard({
   data,
   valueFormatter,
+  axisValueFormatter,
   color = "#2563EB",
   height = 260,
   compact = false,
@@ -66,8 +69,8 @@ export default function BarChartCard({
             tick={{ fontSize: 11, fill: "#8896AB" }}
             axisLine={false}
             tickLine={false}
-            width={60}
-            tickFormatter={valueFormatter}
+            width={64}
+            tickFormatter={axisValueFormatter ?? valueFormatter}
           />
           <Tooltip
             cursor={{ fill: "rgba(148, 163, 184, 0.12)" }}
