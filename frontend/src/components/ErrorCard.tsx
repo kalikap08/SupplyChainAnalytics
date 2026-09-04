@@ -12,7 +12,7 @@ export default function ErrorCard({ message, onRetry }: ErrorCardProps) {
         <IconAlert width={22} height={22} />
       </span>
       <h3 className="mt-4 text-[16px] font-semibold text-ink-900">
-        Unable to load executive dashboard
+        Unable to load data
       </h3>
       <p className="mt-1.5 max-w-sm text-[13.5px] text-ink-600">
         Check that the FastAPI backend is running.
